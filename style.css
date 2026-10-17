@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #12121e, #08080f);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.player-container {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 360px;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.track-details h2 {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+    color: #00ffcc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.track-details h3 {
+    font-size: 0.95rem;
+    color: #b0b0b0;
+    margin-bottom: 25px;
+}
+
+.progress-container {
+    margin-bottom: 25px;
+}
+
+#progress-bar {
+    width: 100%;
+    accent-color: #00ffcc;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.time-stamps {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #8c8c8c;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.ctrl-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.ctrl-btn:hover {
+    color: #00ffcc;
+    transform: scale(1.15);
+}
+
+.play-main {
+    background: #00ffcc;
+    color: #12121e;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 255, 204, 0.4);
+}
+
+.play-main:hover {
+    background: #ffffff;
+    color: #12121e;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.6);
+}
+
+.playlist-section {
+    text-align: left;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 15px;
+}
+
+.playlist-section h3 {
+    font-size: 0.85rem;
+    color: #8c8c8c;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#playlist-queue {
+    list-style: none;
+    max-height: 130px;
+    overflow-y: auto;
+}
+
+#playlist-queue li {
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    color: #e0e0e0;
+    transition: background 0.2s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#playlist-queue li:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+#playlist-queue li.active-track {
+    background: rgba(0, 255, 204, 0.15);
+    color: #00ffcc;
+    font-weight: bold;
+}

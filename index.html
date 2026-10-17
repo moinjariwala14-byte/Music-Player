@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="player-container">
+        <audio id="audio-element"></audio>
+
+        <div class="track-details">
+            <h2 id="track-title">Loading Track...</h2>
+            <h3 id="track-artist">Loading Artist...</h3>
+        </div>
+
+        <div class="progress-container">
+            <input type="range" id="progress-bar" min="0" max="100" value="0">
+            <div class="time-stamps">
+                <span id="current-time">0:00</span>
+                <span id="duration-time">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="btn-prev" class="ctrl-btn">⏮</button>
+            <button id="btn-play" class="ctrl-btn play-main">▶</button>
+            <button id="btn-next" class="ctrl-btn">⏭</button>
+        </div>
+
+        <div class="playlist-section">
+            <h3>Your Track Queue</h3>
+            <ul id="playlist-queue">
+                </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
