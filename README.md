@@ -1,4 +1,16 @@
-I made an app which is a media music-player
-I used Json code to make it
-and i put maybe 10 songs in it as you can put more songs in it just by copy and paste
-it works as music app which provide music name, its theme or it gives you functions  like forward and backward.
+# 🎵 Web Music Player
+
+An interactive, responsive audio streaming web player built with vanilla web technologies.
+
+## 🌟 Features
+* **Custom Audio Controls:** Play, pause, seek, forward, and backward playback controls.
+* **Dynamic Playlist:** Songs loaded dynamically using JSON data structures.
+* **Responsive UI:** Clean interface styled with custom CSS.
+
+## 🛠️ Tech Stack
+* **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+* **Data Format:** JSON
+* **Deployment:** GitHub Pages
+
+## 🚀 Live Demo
+Check out the live website: [Music Player Live](https://moinjariwala14-byte.github.io/Music-Player/)
